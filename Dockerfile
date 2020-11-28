@@ -25,4 +25,4 @@ ENV HOME /opt/fossil
 EXPOSE 8080
 
 CMD ["/usr/bin/fossil", "server", "--https", "--create", "--user", "admin", "/opt/fossil/repository.fossil"]
-CMD ["/usr/bin/fossil", "user", "-R", "/opt/fossil/repository.fossil", "password", "admin"]
+CMD ["/usr/bin/fossil", "user", "password", "-R", "/opt/fossil/repository.fossil", "admin", "admin"]
